@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Extravagant Landing Page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+        url("https://www.gotokyo.org/en/story/guide/hanami-guide/images/sg009_1376_202.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      animation: fadeUp 1.5s ease forwards;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      opacity: 0.85;
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    /* BUTTON */
+    .cta-btn {
+      display: inline-block;
+      padding: 18px 48px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+      background: linear-gradient(135deg, gold, orange);
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 30px rgba(255, 200, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 50px rgba(255, 200, 0, 0.9);
+    }
+
+    /* FEATURE SECTION */
+    .features {
+      padding: 100px 10%;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.05);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: gold;
+    }
+
+    .feature p {
+      font-size: 1rem;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px;
+      text-align: center;
+      background: #000;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Experience the Extraordinary</h1>
+      <p>
+        A premium visual reveal crafted for elegance, impact,
+        and timeless digital presentation.
+      </p>
+
+      <!-- CLICK ME BUTTON -->
+      <a
+        href="https://github.com/NitoNazuna123/just4fun1000101/blob/main/53a73f9e-5390-4d7e-b39e-e8af505d433c.png?raw=true"
+        class="cta-btn"
+        target="_blank"
+      >
+        Click Me
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">
+      <h3>Luxury Design</h3>
+      <p>
+        Crafted with cinematic lighting, refined spacing,
+        and elegant motion for a premium feel.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Universal Access</h3>
+      <p>
+        Fully online, accessible from any device,
+        without folders or local files.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Instant Reveal</h3>
+      <p>
+        One click delivers the experience instantly,
+        cleanly, and securely.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 • Extravagant Click Experience
+  </footer>
+
+</body>
+</html>
